@@ -1,15 +1,14 @@
+// filepath: /home/adam-noah/nextnoetic/app/(tabs)/index.tsx
 import { Image, StyleSheet, Platform, Button } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import '../../global.css';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
   return (
-    <NavigationContainer>
+    <>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">NEXT NOETICS</ThemedText>
+        <ThemedText type="title">Next Vacation</ThemedText>
         <ThemedText type="subtitle">Login or Sign up!</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -18,7 +17,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.titleContainer}>
         <Button title="Sign Up" onPress={() => { }} />
       </ThemedView>
-    </NavigationContainer>
+    </>
   );
 }
 
